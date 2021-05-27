@@ -1,5 +1,7 @@
 :root {
   --main-color: rgb(64, 175, 36);
+  --main-color2: rgb(7, 184, 7);
+  --main-color3: #00c853b0;
   --main-size: 96vw;
 }
 
@@ -16,6 +18,10 @@ header {
 a {
   text-decoration: none;
   color: white;
+}
+
+.center {
+  text-align: center;
 }
 
 #navbar {
@@ -101,7 +107,7 @@ section {
   font-size: 1.2em;
 }
 
-#news {
+#main-section {
   display: grid;
   grid-template-columns: 1fr 0.5fr;
   grid-gap: 20px;
@@ -116,6 +122,7 @@ aside {
   height: 14px;
   border-bottom: 1px solid black;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .custom-hr-text {
@@ -124,4 +131,97 @@ aside {
   color: white;
   padding: 2px 10px;
   border-radius: 3px;
+}
+
+.news-card {
+  display: flex;
+  margin-bottom: 20px;
+}
+.news-img {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  margin-right: 2%;
+}
+
+.news-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.news-top {
+  color: #777788;
+  margin-bottom: 7px;
+}
+.news-category {
+  font-weight: bold;
+}
+.news-title {
+  font-size: 1.5em;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.news-description {
+  color: #62626b;
+  font-size: 1.1em;
+}
+
+.iframe-video {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.iframe-video iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.aside-card {
+  display: flex;
+  padding: 10px 10px;
+  box-shadow: 0 3px 8px 0 #dfdfdf;
+  border-radius: 5px;
+  border-left: solid var(--main-color2) 10px;
+  margin-bottom: 30px;
+}
+
+.plan-card {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan-infos {
+  text-align: center;
+}
+
+.newsletter-card {
+  flex-direction: column;
+  align-items: center;
+}
+.newsletter-btn {
+  border-radius: 5px;
+  border: 0;
+  color: white;
+  background-color: var(--main-color2);
+  padding: 10px;
+  box-shadow: 0 3px 6px 0 var(--main-color3);
+  cursor: pointer;
+  margin: 10px;
+  width: 100px;
+}
+
+.test-card {
+  align-items: center;
+}
+.test-img {
+  border-radius: 5px;
+  margin-right: 2%;
+}
+.test-description {
 }
