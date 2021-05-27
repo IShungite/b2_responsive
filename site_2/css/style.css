@@ -167,19 +167,12 @@ aside {
   font-size: 1.1em;
 }
 
-.iframe-video {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
+.aside-video {
+  text-align: center;
+  margin-bottom: 30px;
 }
-
-.iframe-video iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
+.aside-video video {
   width: 100%;
-  position: absolute;
 }
 
 .aside-card {
