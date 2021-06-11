@@ -99,7 +99,7 @@ section {
 
 .card-title {
   color: white;
-  font-size: 4em;
+  font-size: 3.5em;
   font-weight: bold;
 }
 .card-description {
@@ -167,6 +167,10 @@ aside {
   font-size: 1.1em;
 }
 
+.aside {
+  border: 1px solid red;
+}
+
 .aside-video {
   text-align: center;
   margin-bottom: 30px;
@@ -216,5 +220,42 @@ aside {
   border-radius: 5px;
   margin-right: 2%;
 }
-.test-description {
+
+.deals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 20px;
+}
+
+.deal-card {
+  position: relative;
+  text-align: center;
+}
+
+.deal-img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.deal-text {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 350px;
+}
+
+@media all and (max-device-width: 480px) {
+}
+
+@media all and (max-width: 1024px) {
+  #main-article {
+    grid-template-columns: 1fr;
+  }
+  #main-section {
+    grid-template-columns: 1fr;
+  }
 }
